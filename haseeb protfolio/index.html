@@ -1373,9 +1373,10 @@
                     <a href="#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Contact Me
                     </a>
-                    <button class="btn btn-cv" id="cvBtn" title="CV will be added later">
-                        <i class="fas fa-download"></i> Download CV
-                    </button>
+                    <a href="haseeb-cv.pdf" download class="btn btn-cv">
+    <i class="fas fa-download"></i> Download My CV
+</a>
+                    
                 </div>
             </div>
             <div class="home-image">
@@ -1864,15 +1865,6 @@
             }, 3000);
         });
         */
-
-        // ===== CV BUTTON =====
-        document.getElementById('cvBtn').addEventListener('click', () => {
-            const btn = document.getElementById('cvBtn');
-            btn.innerHTML = '<i class="fas fa-clock"></i> CV Coming Soon';
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fas fa-download"></i> Download CV';
-            }, 2000);
-        });
 
         // ===== SMOOTH SCROLL =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
